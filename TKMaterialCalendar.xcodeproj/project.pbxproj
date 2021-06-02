@@ -23,6 +23,8 @@
 		DA8FEA2A266753CD00BFED0B /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */; };
 		DA8FEA2D266753E200BFED0B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA2C266753E200BFED0B /* KeychainAccess */; };
 		DA8FEA332667556200BFED0B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA322667556200BFED0B /* R.generated.swift */; };
+		DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */; };
+		DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		DA8FEA342667567300BFED0B /* TKMaterialCalendarTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TKMaterialCalendarTests.xctestplan; sourceTree = "<group>"; };
 		DA8FEA352667569500BFED0B /* TKMaterialCalendarUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TKMaterialCalendarUITests.xctestplan; sourceTree = "<group>"; };
 		DA8FEA3D266757EA00BFED0B /* TKMaterialCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TKMaterialCalendar.entitlements; sourceTree = "<group>"; };
+		DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialScheme.swift; sourceTree = "<group>"; };
+		DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rswift+Extensions.swift"; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
+				DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,8 +236,17 @@
 		DA8FEA3C2667579500BFED0B /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA412667688A00BFED0B /* Utility */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		DA8FEA412667688A00BFED0B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		DDC9DA35C21F830773541A66 /* Pods */ = {
@@ -575,6 +589,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */,
+				DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */,
 				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
 				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
 				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
