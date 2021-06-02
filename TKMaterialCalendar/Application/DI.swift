@@ -16,6 +16,10 @@ enum DI {
     private(set) static var shared: Container = {
         let container = Container()
 
+        container.register(SplashViewModel.self) { _ in
+            SplashViewModel()
+        }
+
         return container
     }()
 

@@ -6,25 +6,54 @@
 //
 
 import UIKit
+import Swinject
+import SwinjectAutoregistration
+import GoogleSignIn
+import GTMSessionFetcher
+import GoogleAPIClientForREST
 
 class SplashViewController: UIViewController {
 
+    private let viewModel = DI.shared ~> SplashViewModel.self
+    private let signIn = GIDSignIn.sharedInstance()!
     var rootNavigator: RootNavigator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        signIn.presentingViewController = self
+        signIn.delegate = self
     }
 
-    /*
-     // MARK: - Navigation
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+        signIn.signIn()
+    }
 
+}
+
+extension SplashViewController: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if error != nil {
+            print("\(error.localizedDescription)")
+            return
+        }
+
+        let query = GTLRCalendarQuery_CalendarListList.query()
+
+        let service = GTLRCalendarService()
+        service.authorizer = signIn.currentUser.authentication.fetcherAuthorizer()
+        service.executeQuery(query) {  _, data, error in
+            if let error = error {
+                NSLog("\(error)")
+            } else {
+                if let calendarList = data as? GTLRCalendar_CalendarList, let items = calendarList.items {
+                    items.forEach { item in
+                        print(item.identifier ?? "nil")
+                    }
+                }
+            }
+        }
+    }
 }

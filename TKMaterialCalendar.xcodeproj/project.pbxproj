@@ -34,6 +34,8 @@
 		DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */; };
 		DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA57266770C300BFED0B /* SplashViewController.swift */; };
 		DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5B266773B000BFED0B /* MainViewController.swift */; };
+		DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */; };
+		DA8FEA6026677BEF00BFED0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
 		DA8FEA57266770C300BFED0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DA8FEA5B266773B000BFED0B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +205,7 @@
 		DA8FEA312667553C00BFED0B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */,
 				DA8FEA4426676E8900BFED0B /* Splash.storyboard */,
 				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
 				DA7F9EB62667330C001E1B22 /* Assets.xcassets */,
@@ -238,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8FEA57266770C300BFED0B /* SplashViewController.swift */,
+				DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 			files = (
 				DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */,
 				DA8FEA4826676F4C00BFED0B /* Localizable.strings in Resources */,
+				DA8FEA6026677BEF00BFED0B /* GoogleService-Info.plist in Resources */,
 				DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */,
 				DA8FEA4526676E8900BFED0B /* Splash.storyboard in Resources */,
 			);
@@ -683,6 +690,7 @@
 				DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */,
 				DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */,
 				DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */,
+				DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */,
 				DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */,
 				DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */,
 				DA8FEA522667703800BFED0B /* DI.swift in Sources */,

@@ -43,11 +43,12 @@ class RootViewController: UIViewController, RootNavigatorDelegate {
         let drawerContainer = DrawerContainerController(drawerWidth: drawerWidth)
 
         let mainViewController = MainViewController(rootNavigator: rootNavigator)
+        let navigationController = UINavigationController(rootViewController: mainViewController)
         let drawerContentViewController = DrawerContentViewController(rootNavigator: rootNavigator)
 
         // mediate
         drawerContainer.drawerViewController = drawerContentViewController
-        drawerContainer.mainViewController = mainViewController
+        drawerContainer.mainViewController = navigationController
         animateFadeTransition(to: drawerContainer)
     }
 
