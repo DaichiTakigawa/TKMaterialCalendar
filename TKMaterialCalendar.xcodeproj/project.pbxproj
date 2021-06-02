@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -165,7 +165,6 @@
 				23FFA0D6C957447CB5DED220 /* Pods-TKMaterialCalendarTests.debug.xcconfig */,
 				CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +179,7 @@
 				DA7F9EA62667330B001E1B22 /* Sources */,
 				DA7F9EA72667330B001E1B22 /* Frameworks */,
 				DA7F9EA82667330B001E1B22 /* Resources */,
+				56740C88CFA6A55F5C3785A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +198,7 @@
 				DA7F9EBC2667330C001E1B22 /* Sources */,
 				DA7F9EBD2667330C001E1B22 /* Frameworks */,
 				DA7F9EBE2667330C001E1B22 /* Resources */,
+				CE0E492B7577D8215FF79666 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +218,7 @@
 				DA7F9EC72667330C001E1B22 /* Sources */,
 				DA7F9EC82667330C001E1B22 /* Frameworks */,
 				DA7F9EC92667330C001E1B22 /* Resources */,
+				3A058DC546146D36A144188F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +344,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3A058DC546146D36A144188F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		43888FA045C7B47BFF77A1C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +381,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56740C88CFA6A55F5C3785A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0E492B7577D8215FF79666 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -588,7 +641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23FFA0D6C957447CB5DED220 /* Pods-TKMaterialCalendarTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
@@ -611,7 +664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
@@ -634,7 +687,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
 				INFOPLIST_FILE = TKMaterialCalendarUITests/Info.plist;
@@ -655,7 +708,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00C26718E2D67780487F9719 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
 				INFOPLIST_FILE = TKMaterialCalendarUITests/Info.plist;
