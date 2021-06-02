@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */; };
+		C3692189E9AA51C0A18E1630 /* Pods_TKMaterialCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */; };
+		D447750E3FF5C8F87FDF2FA6 /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */; };
+		DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */; };
+		DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */; };
+		DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EB12667330B001E1B22 /* ViewController.swift */; };
+		DA7F9EB52667330B001E1B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB32667330B001E1B22 /* Main.storyboard */; };
+		DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB62667330C001E1B22 /* Assets.xcassets */; };
+		DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */; };
+		DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */; };
+		DA7F9ED02667330C001E1B22 /* TKMaterialCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7F9EC12667330C001E1B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7F9EA22667330B001E1B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7F9EA92667330B001E1B22;
+			remoteInfo = TKMaterialCalendar;
+		};
+		DA7F9ECC2667330C001E1B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7F9EA22667330B001E1B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7F9EA92667330B001E1B22;
+			remoteInfo = TKMaterialCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C26718E2D67780487F9719 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKMaterialCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FFA0D6C957447CB5DED220 /* Pods-TKMaterialCalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendarTests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F065654EE93B6509F4320B /* Pods-TKMaterialCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendarTests.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKMaterialCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F9EAA2667330B001E1B22 /* TKMaterialCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKMaterialCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA7F9EB12667330B001E1B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7F9EB42667330B001E1B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA7F9EB62667330C001E1B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA7F9EB92667330C001E1B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA7F9EBB2667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7F9EC02667330C001E1B22 /* TKMaterialCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKMaterialCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKMaterialCalendarTests.swift; sourceTree = "<group>"; };
+		DA7F9EC62667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7F9ECB2667330C001E1B22 /* TKMaterialCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKMaterialCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKMaterialCalendarUITests.swift; sourceTree = "<group>"; };
+		DA7F9ED12667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7F9EA72667330B001E1B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EBD2667330C001E1B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3692189E9AA51C0A18E1630 /* Pods_TKMaterialCalendarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EC82667330C001E1B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D447750E3FF5C8F87FDF2FA6 /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4776DECE705654896BD96B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */,
+				615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */,
+				D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7F9EA12667330B001E1B22 = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EAC2667330B001E1B22 /* TKMaterialCalendar */,
+				DA7F9EC32667330C001E1B22 /* TKMaterialCalendarTests */,
+				DA7F9ECE2667330C001E1B22 /* TKMaterialCalendarUITests */,
+				DA7F9EAB2667330B001E1B22 /* Products */,
+				DDC9DA35C21F830773541A66 /* Pods */,
+				4776DECE705654896BD96B34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7F9EAB2667330B001E1B22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EAA2667330B001E1B22 /* TKMaterialCalendar.app */,
+				DA7F9EC02667330C001E1B22 /* TKMaterialCalendarTests.xctest */,
+				DA7F9ECB2667330C001E1B22 /* TKMaterialCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7F9EAC2667330B001E1B22 /* TKMaterialCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */,
+				DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */,
+				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
+				DA7F9EB32667330B001E1B22 /* Main.storyboard */,
+				DA7F9EB62667330C001E1B22 /* Assets.xcassets */,
+				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
+				DA7F9EBB2667330C001E1B22 /* Info.plist */,
+			);
+			path = TKMaterialCalendar;
+			sourceTree = "<group>";
+		};
+		DA7F9EC32667330C001E1B22 /* TKMaterialCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */,
+				DA7F9EC62667330C001E1B22 /* Info.plist */,
+			);
+			path = TKMaterialCalendarTests;
+			sourceTree = "<group>";
+		};
+		DA7F9ECE2667330C001E1B22 /* TKMaterialCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */,
+				DA7F9ED12667330C001E1B22 /* Info.plist */,
+			);
+			path = TKMaterialCalendarUITests;
+			sourceTree = "<group>";
+		};
+		DDC9DA35C21F830773541A66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */,
+				B8F065654EE93B6509F4320B /* Pods-TKMaterialCalendar.release.xcconfig */,
+				E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */,
+				00C26718E2D67780487F9719 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig */,
+				23FFA0D6C957447CB5DED220 /* Pods-TKMaterialCalendarTests.debug.xcconfig */,
+				CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7F9EA92667330B001E1B22 /* TKMaterialCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7F9ED42667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendar" */;
+			buildPhases = (
+				2F891BB946FDCE987AE0E84B /* [CP] Check Pods Manifest.lock */,
+				DA7F9EA62667330B001E1B22 /* Sources */,
+				DA7F9EA72667330B001E1B22 /* Frameworks */,
+				DA7F9EA82667330B001E1B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKMaterialCalendar;
+			productName = TKMaterialCalendar;
+			productReference = DA7F9EAA2667330B001E1B22 /* TKMaterialCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7F9EBF2667330C001E1B22 /* TKMaterialCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7F9ED72667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendarTests" */;
+			buildPhases = (
+				43888FA045C7B47BFF77A1C6 /* [CP] Check Pods Manifest.lock */,
+				DA7F9EBC2667330C001E1B22 /* Sources */,
+				DA7F9EBD2667330C001E1B22 /* Frameworks */,
+				DA7F9EBE2667330C001E1B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7F9EC22667330C001E1B22 /* PBXTargetDependency */,
+			);
+			name = TKMaterialCalendarTests;
+			productName = TKMaterialCalendarTests;
+			productReference = DA7F9EC02667330C001E1B22 /* TKMaterialCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA7F9ECA2667330C001E1B22 /* TKMaterialCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7F9EDA2667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendarUITests" */;
+			buildPhases = (
+				130307A457AE3B534A1D6E04 /* [CP] Check Pods Manifest.lock */,
+				DA7F9EC72667330C001E1B22 /* Sources */,
+				DA7F9EC82667330C001E1B22 /* Frameworks */,
+				DA7F9EC92667330C001E1B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7F9ECD2667330C001E1B22 /* PBXTargetDependency */,
+			);
+			name = TKMaterialCalendarUITests;
+			productName = TKMaterialCalendarUITests;
+			productReference = DA7F9ECB2667330C001E1B22 /* TKMaterialCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7F9EA22667330B001E1B22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DA7F9EA92667330B001E1B22 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DA7F9EBF2667330C001E1B22 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DA7F9EA92667330B001E1B22;
+					};
+					DA7F9ECA2667330C001E1B22 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DA7F9EA92667330B001E1B22;
+					};
+				};
+			};
+			buildConfigurationList = DA7F9EA52667330B001E1B22 /* Build configuration list for PBXProject "TKMaterialCalendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7F9EA12667330B001E1B22;
+			productRefGroup = DA7F9EAB2667330B001E1B22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7F9EA92667330B001E1B22 /* TKMaterialCalendar */,
+				DA7F9EBF2667330C001E1B22 /* TKMaterialCalendarTests */,
+				DA7F9ECA2667330C001E1B22 /* TKMaterialCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7F9EA82667330B001E1B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */,
+				DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */,
+				DA7F9EB52667330B001E1B22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EBE2667330C001E1B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EC92667330C001E1B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130307A457AE3B534A1D6E04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F891BB946FDCE987AE0E84B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKMaterialCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43888FA045C7B47BFF77A1C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKMaterialCalendarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7F9EA62667330B001E1B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
+				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
+				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EBC2667330C001E1B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F9EC72667330C001E1B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F9ED02667330C001E1B22 /* TKMaterialCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7F9EC22667330C001E1B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7F9EA92667330B001E1B22 /* TKMaterialCalendar */;
+			targetProxy = DA7F9EC12667330C001E1B22 /* PBXContainerItemProxy */;
+		};
+		DA7F9ECD2667330C001E1B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7F9EA92667330B001E1B22 /* TKMaterialCalendar */;
+			targetProxy = DA7F9ECC2667330C001E1B22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7F9EB32667330B001E1B22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F9EB42667330B001E1B22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F9EB92667330C001E1B22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7F9ED22667330C001E1B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA7F9ED32667330C001E1B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7F9ED52667330C001E1B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7F9ED62667330C001E1B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F065654EE93B6509F4320B /* Pods-TKMaterialCalendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA7F9ED82667330C001E1B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FFA0D6C957447CB5DED220 /* Pods-TKMaterialCalendarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKMaterialCalendar.app/TKMaterialCalendar";
+			};
+			name = Debug;
+		};
+		DA7F9ED92667330C001E1B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKMaterialCalendar.app/TKMaterialCalendar";
+			};
+			name = Release;
+		};
+		DA7F9EDB2667330C001E1B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TKMaterialCalendar;
+			};
+			name = Debug;
+		};
+		DA7F9EDC2667330C001E1B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C26718E2D67780487F9719 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8KDV2PAXH;
+				INFOPLIST_FILE = TKMaterialCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TKMaterialCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7F9EA52667330B001E1B22 /* Build configuration list for PBXProject "TKMaterialCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F9ED22667330C001E1B22 /* Debug */,
+				DA7F9ED32667330C001E1B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7F9ED42667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F9ED52667330C001E1B22 /* Debug */,
+				DA7F9ED62667330C001E1B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7F9ED72667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F9ED82667330C001E1B22 /* Debug */,
+				DA7F9ED92667330C001E1B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7F9EDA2667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F9EDB2667330C001E1B22 /* Debug */,
+				DA7F9EDC2667330C001E1B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7F9EA22667330B001E1B22 /* Project object */;
+}
