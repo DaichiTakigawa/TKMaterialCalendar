@@ -6,54 +6,38 @@
 //
 
 import UIKit
+import Combine
 import Swinject
 import SwinjectAutoregistration
-import GoogleSignIn
-import GTMSessionFetcher
-import GoogleAPIClientForREST
 
 class SplashViewController: UIViewController {
 
     private let viewModel = DI.shared ~> SplashViewModel.self
-    private let signIn = GIDSignIn.sharedInstance()!
+    private var cancellables = Set<AnyCancellable>()
     var rootNavigator: RootNavigator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        signIn.presentingViewController = self
-        signIn.delegate = self
+        setupObservers()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        signIn.signIn()
+        viewModel.signIn(presentingViewController: self)
     }
 
-}
-
-extension SplashViewController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if error != nil {
-            print("\(error.localizedDescription)")
-            return
-        }
-
-        let query = GTLRCalendarQuery_CalendarListList.query()
-
-        let service = GTLRCalendarService()
-        service.authorizer = signIn.currentUser.authentication.fetcherAuthorizer()
-        service.executeQuery(query) {  _, data, error in
-            if let error = error {
-                NSLog("\(error)")
-            } else {
-                if let calendarList = data as? GTLRCalendar_CalendarList, let items = calendarList.items {
-                    items.forEach { item in
-                        print(item.identifier ?? "nil")
-                    }
-                }
+    private func setupObservers() {
+        viewModel.$loginState.sink { [weak self] loginState in
+            switch loginState {
+            case .success:
+                self?.rootNavigator.navigateTo(destination: .main)
+            default:
+                break
             }
         }
+        .store(in: &cancellables)
     }
+
 }
