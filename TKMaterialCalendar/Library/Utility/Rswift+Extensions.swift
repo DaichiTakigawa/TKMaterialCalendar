@@ -22,4 +22,3 @@ extension ImageResource {
         UIImage(named: name)!
     }
 }
-

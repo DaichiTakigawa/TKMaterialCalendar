@@ -25,6 +25,15 @@
 		DA8FEA332667556200BFED0B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA322667556200BFED0B /* R.generated.swift */; };
 		DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */; };
 		DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */; };
+		DA8FEA4526676E8900BFED0B /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8FEA4426676E8900BFED0B /* Splash.storyboard */; };
+		DA8FEA4826676F4C00BFED0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA8FEA4A26676F4C00BFED0B /* Localizable.strings */; };
+		DA8FEA4D26676FB000BFED0B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA4C26676FB000BFED0B /* RootViewController.swift */; };
+		DA8FEA4F26676FEE00BFED0B /* RootNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA4E26676FEE00BFED0B /* RootNavigator.swift */; };
+		DA8FEA522667703800BFED0B /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA512667703800BFED0B /* DI.swift */; };
+		DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA532667708800BFED0B /* DrawerContainerController.swift */; };
+		DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */; };
+		DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA57266770C300BFED0B /* SplashViewController.swift */; };
+		DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5B266773B000BFED0B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +80,16 @@
 		DA8FEA3D266757EA00BFED0B /* TKMaterialCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TKMaterialCalendar.entitlements; sourceTree = "<group>"; };
 		DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialScheme.swift; sourceTree = "<group>"; };
 		DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rswift+Extensions.swift"; sourceTree = "<group>"; };
+		DA8FEA4426676E8900BFED0B /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		DA8FEA4926676F4C00BFED0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA8FEA4B26676F6500BFED0B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA8FEA4C26676FB000BFED0B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		DA8FEA4E26676FEE00BFED0B /* RootNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigator.swift; sourceTree = "<group>"; };
+		DA8FEA512667703800BFED0B /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		DA8FEA532667708800BFED0B /* DrawerContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContainerController.swift; sourceTree = "<group>"; };
+		DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
+		DA8FEA57266770C300BFED0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DA8FEA5B266773B000BFED0B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +167,8 @@
 				DA8FEA382667575100BFED0B /* Model */,
 				DA8FEA392667575F00BFED0B /* Splash */,
 				DA8FEA3A2667577D00BFED0B /* Drawer */,
+				DA8FEA59266770DE00BFED0B /* Calendar */,
+				DA8FEA5A266770ED00BFED0B /* Event */,
 				DA8FEA3B2667578C00BFED0B /* View */,
 				DA8FEA3C2667579500BFED0B /* Library */,
 				DA8FEA312667553C00BFED0B /* Resource */,
@@ -180,9 +201,11 @@
 		DA8FEA312667553C00BFED0B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA4426676E8900BFED0B /* Splash.storyboard */,
 				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
 				DA7F9EB62667330C001E1B22 /* Assets.xcassets */,
 				DA8FEA322667556200BFED0B /* R.generated.swift */,
+				DA8FEA4A26676F4C00BFED0B /* Localizable.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -199,6 +222,7 @@
 			children = (
 				DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */,
 				DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */,
+				DA8FEA512667703800BFED0B /* DI.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -213,6 +237,7 @@
 		DA8FEA392667575F00BFED0B /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA57266770C300BFED0B /* SplashViewController.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -220,6 +245,8 @@
 		DA8FEA3A2667577D00BFED0B /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA532667708800BFED0B /* DrawerContainerController.swift */,
+				DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */,
 			);
 			path = Drawer;
 			sourceTree = "<group>";
@@ -227,6 +254,10 @@
 		DA8FEA3B2667578C00BFED0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA502667700100BFED0B /* MonthCalendar */,
+				DA8FEA4C26676FB000BFED0B /* RootViewController.swift */,
+				DA8FEA4E26676FEE00BFED0B /* RootNavigator.swift */,
+				DA8FEA5B266773B000BFED0B /* MainViewController.swift */,
 				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
 				DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */,
 			);
@@ -247,6 +278,27 @@
 				DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		DA8FEA502667700100BFED0B /* MonthCalendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MonthCalendar;
+			sourceTree = "<group>";
+		};
+		DA8FEA59266770DE00BFED0B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DA8FEA5A266770ED00BFED0B /* Event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		DDC9DA35C21F830773541A66 /* Pods */ = {
@@ -277,6 +329,7 @@
 				DA7F9EA82667330B001E1B22 /* Resources */,
 				DA8FEA302667547500BFED0B /* Swift Lint */,
 				56740C88CFA6A55F5C3785A8 /* [CP] Embed Pods Frameworks */,
+				31FCCBA30B5D738BC16FCD83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +376,7 @@
 				DA7F9EC82667330C001E1B22 /* Frameworks */,
 				DA7F9EC92667330C001E1B22 /* Resources */,
 				3A058DC546146D36A144188F /* [CP] Embed Pods Frameworks */,
+				A8C0760312100CA783DC8481 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,6 +417,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = DA7F9EA12667330B001E1B22;
 			packageReferences = (
@@ -388,7 +443,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */,
+				DA8FEA4826676F4C00BFED0B /* Localizable.strings in Resources */,
 				DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */,
+				DA8FEA4526676E8900BFED0B /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +510,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		31FCCBA30B5D738BC16FCD83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3A058DC546146D36A144188F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,6 +581,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C0760312100CA783DC8481 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE0E492B7577D8215FF79666 /* [CP] Embed Pods Frameworks */ = {
@@ -590,9 +681,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */,
+				DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */,
 				DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */,
+				DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */,
+				DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */,
+				DA8FEA522667703800BFED0B /* DI.swift in Sources */,
 				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
+				DA8FEA4D26676FB000BFED0B /* RootViewController.swift in Sources */,
 				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
+				DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */,
+				DA8FEA4F26676FEE00BFED0B /* RootNavigator.swift in Sources */,
 				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
 				DA8FEA332667556200BFED0B /* R.generated.swift in Sources */,
 			);
@@ -638,6 +736,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DA8FEA4A26676F4C00BFED0B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8FEA4926676F4C00BFED0B /* en */,
+				DA8FEA4B26676F6500BFED0B /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -645,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -706,6 +814,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

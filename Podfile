@@ -9,6 +9,8 @@ target 'TKMaterialCalendar' do
   pod 'R.swift'
   pod 'SwiftLint'
   pod 'MaterialComponents'
+  pod 'GoogleAPIClientForREST/Calendar'
+  pod 'GoogleSignIn'
 
   target 'TKMaterialCalendarTests' do
     inherit! :search_paths
