@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "7141D99E-C505-491D-A06C-D5ED7DEAFAF3",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TKMaterialCalendar.xcodeproj",
+      "identifier" : "DA7F9EBF2667330C001E1B22",
+      "name" : "TKMaterialCalendarTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TKMaterialCalendar.xcodeproj",
+        "identifier" : "DA7F9EBF2667330C001E1B22",
+        "name" : "TKMaterialCalendarTests"
+      }
+    }
+  ],
+  "version" : 1
+}

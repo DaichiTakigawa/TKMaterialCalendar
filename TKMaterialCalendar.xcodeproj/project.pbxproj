@@ -13,7 +13,6 @@
 		DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */; };
 		DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */; };
 		DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EB12667330B001E1B22 /* ViewController.swift */; };
-		DA7F9EB52667330B001E1B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB32667330B001E1B22 /* Main.storyboard */; };
 		DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB62667330C001E1B22 /* Assets.xcassets */; };
 		DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */; };
 		DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */; };
@@ -23,6 +22,7 @@
 		DA8FEA27266753B500BFED0B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA26266753B500BFED0B /* Swinject */; };
 		DA8FEA2A266753CD00BFED0B /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */; };
 		DA8FEA2D266753E200BFED0B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA2C266753E200BFED0B /* KeychainAccess */; };
+		DA8FEA332667556200BFED0B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA322667556200BFED0B /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA7F9EB12667330B001E1B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA7F9EB42667330B001E1B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA7F9EB62667330C001E1B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7F9EB92667330C001E1B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA7F9EBB2667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +63,10 @@
 		DA7F9ECB2667330C001E1B22 /* TKMaterialCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKMaterialCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKMaterialCalendarUITests.swift; sourceTree = "<group>"; };
 		DA7F9ED12667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8FEA322667556200BFED0B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = Generated/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DA8FEA342667567300BFED0B /* TKMaterialCalendarTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TKMaterialCalendarTests.xctestplan; sourceTree = "<group>"; };
+		DA8FEA352667569500BFED0B /* TKMaterialCalendarUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TKMaterialCalendarUITests.xctestplan; sourceTree = "<group>"; };
+		DA8FEA3D266757EA00BFED0B /* TKMaterialCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TKMaterialCalendar.entitlements; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,13 +139,16 @@
 		DA7F9EAC2667330B001E1B22 /* TKMaterialCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */,
-				DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */,
-				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
-				DA7F9EB32667330B001E1B22 /* Main.storyboard */,
-				DA7F9EB62667330C001E1B22 /* Assets.xcassets */,
-				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
+				DA8FEA362667573100BFED0B /* Networking */,
+				DA8FEA372667573B00BFED0B /* Application */,
+				DA8FEA382667575100BFED0B /* Model */,
+				DA8FEA392667575F00BFED0B /* Splash */,
+				DA8FEA3A2667577D00BFED0B /* Drawer */,
+				DA8FEA3B2667578C00BFED0B /* View */,
+				DA8FEA3C2667579500BFED0B /* Library */,
+				DA8FEA312667553C00BFED0B /* Resource */,
 				DA7F9EBB2667330C001E1B22 /* Info.plist */,
+				DA8FEA3D266757EA00BFED0B /* TKMaterialCalendar.entitlements */,
 			);
 			path = TKMaterialCalendar;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 		DA7F9EC32667330C001E1B22 /* TKMaterialCalendarTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA342667567300BFED0B /* TKMaterialCalendarTests.xctestplan */,
 				DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */,
 				DA7F9EC62667330C001E1B22 /* Info.plist */,
 			);
@@ -159,10 +166,73 @@
 		DA7F9ECE2667330C001E1B22 /* TKMaterialCalendarUITests */ = {
 			isa = PBXGroup;
 			children = (
+				DA8FEA352667569500BFED0B /* TKMaterialCalendarUITests.xctestplan */,
 				DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */,
 				DA7F9ED12667330C001E1B22 /* Info.plist */,
 			);
 			path = TKMaterialCalendarUITests;
+			sourceTree = "<group>";
+		};
+		DA8FEA312667553C00BFED0B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
+				DA7F9EB62667330C001E1B22 /* Assets.xcassets */,
+				DA8FEA322667556200BFED0B /* R.generated.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DA8FEA362667573100BFED0B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DA8FEA372667573B00BFED0B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */,
+				DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DA8FEA382667575100BFED0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA8FEA392667575F00BFED0B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		DA8FEA3A2667577D00BFED0B /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		DA8FEA3B2667578C00BFED0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8FEA3C2667579500BFED0B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		DDC9DA35C21F830773541A66 /* Pods */ = {
@@ -305,7 +375,6 @@
 			files = (
 				DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */,
 				DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */,
-				DA7F9EB52667330B001E1B22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +578,7 @@
 				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
 				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
 				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
+				DA8FEA332667556200BFED0B /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,14 +614,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA7F9EB32667330B001E1B22 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA7F9EB42667330B001E1B22 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -685,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TKMaterialCalendar/TKMaterialCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
 				INFOPLIST_FILE = TKMaterialCalendar/Info.plist;
@@ -692,6 +755,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -705,6 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TKMaterialCalendar/TKMaterialCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8KDV2PAXH;
 				INFOPLIST_FILE = TKMaterialCalendar/Info.plist;
@@ -712,6 +777,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takigawa-memo.TKMaterialCalendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
