@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,11 @@
 		DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */; };
 		DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */; };
 		DA7F9ED02667330C001E1B22 /* TKMaterialCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */; };
+		DA8FEA222667539100BFED0B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA212667539100BFED0B /* Moya */; };
+		DA8FEA242667539100BFED0B /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA232667539100BFED0B /* CombineMoya */; };
+		DA8FEA27266753B500BFED0B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA26266753B500BFED0B /* Swinject */; };
+		DA8FEA2A266753CD00BFED0B /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */; };
+		DA8FEA2D266753E200BFED0B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA2C266753E200BFED0B /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8FEA222667539100BFED0B /* Moya in Frameworks */,
 				758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */,
+				DA8FEA2D266753E200BFED0B /* KeychainAccess in Frameworks */,
+				DA8FEA2A266753CD00BFED0B /* SwinjectAutoregistration in Frameworks */,
+				DA8FEA242667539100BFED0B /* CombineMoya in Frameworks */,
+				DA8FEA27266753B500BFED0B /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +186,12 @@
 			buildConfigurationList = DA7F9ED42667330C001E1B22 /* Build configuration list for PBXNativeTarget "TKMaterialCalendar" */;
 			buildPhases = (
 				2F891BB946FDCE987AE0E84B /* [CP] Check Pods Manifest.lock */,
+				DA8FEA2E2667540200BFED0B /* Carthage */,
+				DA8FEA2F2667543700BFED0B /* R.Swift */,
 				DA7F9EA62667330B001E1B22 /* Sources */,
 				DA7F9EA72667330B001E1B22 /* Frameworks */,
 				DA7F9EA82667330B001E1B22 /* Resources */,
+				DA8FEA302667547500BFED0B /* Swift Lint */,
 				56740C88CFA6A55F5C3785A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -186,6 +199,13 @@
 			dependencies = (
 			);
 			name = TKMaterialCalendar;
+			packageProductDependencies = (
+				DA8FEA212667539100BFED0B /* Moya */,
+				DA8FEA232667539100BFED0B /* CombineMoya */,
+				DA8FEA26266753B500BFED0B /* Swinject */,
+				DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */,
+				DA8FEA2C266753E200BFED0B /* KeychainAccess */,
+			);
 			productName = TKMaterialCalendar;
 			productReference = DA7F9EAA2667330B001E1B22 /* TKMaterialCalendar.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +281,12 @@
 				Base,
 			);
 			mainGroup = DA7F9EA12667330B001E1B22;
+			packageReferences = (
+				DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */,
+				DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */,
+				DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = DA7F9EAB2667330B001E1B22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,6 +442,62 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DA8FEA2E2667540200BFED0B /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		DA8FEA2F2667543700BFED0B /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Generated/R.generated.swift\"\n";
+		};
+		DA8FEA302667547500BFED0B /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint autocorrect --format\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -765,6 +847,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = "15.0.0-alpha.1";
+			};
+		};
+		DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA8FEA212667539100BFED0B /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		DA8FEA232667539100BFED0B /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		DA8FEA26266753B500BFED0B /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		DA8FEA2C266753E200BFED0B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA7F9EA22667330B001E1B22 /* Project object */;
 }
