@@ -33,10 +33,16 @@
 		DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA532667708800BFED0B /* DrawerContainerController.swift */; };
 		DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */; };
 		DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA57266770C300BFED0B /* SplashViewController.swift */; };
-		DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5B266773B000BFED0B /* MainViewController.swift */; };
 		DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */; };
 		DA8FEA6026677BEF00BFED0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */; };
 		DA8FEA6226678F3800BFED0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA6126678F3800BFED0B /* Logger.swift */; };
+		DAC6D1DA2668AF6C003CA947 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */; };
+		DAC6D1DC2668AF7A003CA947 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */; };
+		DAC6D1DE2668B0A5003CA947 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */; };
+		DAC6D1E02668B115003CA947 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1DF2668B115003CA947 /* DateUtils.swift */; };
+		DAC6D1E32668B786003CA947 /* RootNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */; };
+		DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */; };
+		DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,10 +98,16 @@
 		DA8FEA532667708800BFED0B /* DrawerContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContainerController.swift; sourceTree = "<group>"; };
 		DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
 		DA8FEA57266770C300BFED0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		DA8FEA5B266773B000BFED0B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA8FEA6126678F3800BFED0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		DAC6D1DF2668B115003CA947 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigatorMock.swift; sourceTree = "<group>"; };
+		DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewModel.swift; sourceTree = "<group>"; };
+		DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerCalendarTableViewCell.swift; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +219,7 @@
 		DA8FEA312667553C00BFED0B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6D1E12668B76B003CA947 /* Mock */,
 				DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */,
 				DA8FEA4426676E8900BFED0B /* Splash.storyboard */,
 				DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */,
@@ -255,6 +268,8 @@
 			children = (
 				DA8FEA532667708800BFED0B /* DrawerContainerController.swift */,
 				DA8FEA55266770A400BFED0B /* DrawerContentViewController.swift */,
+				DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */,
+				DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */,
 			);
 			path = Drawer;
 			sourceTree = "<group>";
@@ -265,7 +280,6 @@
 				DA8FEA502667700100BFED0B /* MonthCalendar */,
 				DA8FEA4C26676FB000BFED0B /* RootViewController.swift */,
 				DA8FEA4E26676FEE00BFED0B /* RootNavigator.swift */,
-				DA8FEA5B266773B000BFED0B /* MainViewController.swift */,
 				DA7F9EB12667330B001E1B22 /* ViewController.swift */,
 				DA8FEA3E2667674000BFED0B /* MaterialScheme.swift */,
 			);
@@ -285,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8FEA422667697000BFED0B /* Rswift+Extensions.swift */,
+				DAC6D1DF2668B115003CA947 /* DateUtils.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -299,6 +314,8 @@
 		DA8FEA59266770DE00BFED0B /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */,
+				DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -306,8 +323,17 @@
 		DA8FEA5A266770ED00BFED0B /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		DAC6D1E12668B76B003CA947 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		DDC9DA35C21F830773541A66 /* Pods */ = {
@@ -690,8 +716,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC6D1DA2668AF6C003CA947 /* CalendarViewController.swift in Sources */,
 				DA8FEA432667697000BFED0B /* Rswift+Extensions.swift in Sources */,
-				DA8FEA5C266773B000BFED0B /* MainViewController.swift in Sources */,
+				DAC6D1E02668B115003CA947 /* DateUtils.swift in Sources */,
 				DA8FEA3F2667674000BFED0B /* MaterialScheme.swift in Sources */,
 				DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */,
 				DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */,
@@ -703,8 +730,13 @@
 				DA8FEA6226678F3800BFED0B /* Logger.swift in Sources */,
 				DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */,
 				DA8FEA4F26676FEE00BFED0B /* RootNavigator.swift in Sources */,
+				DAC6D1E32668B786003CA947 /* RootNavigatorMock.swift in Sources */,
 				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
 				DA8FEA332667556200BFED0B /* R.generated.swift in Sources */,
+				DAC6D1DC2668AF7A003CA947 /* EventViewController.swift in Sources */,
+				DAC6D1DE2668B0A5003CA947 /* MonthViewController.swift in Sources */,
+				DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */,
+				DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

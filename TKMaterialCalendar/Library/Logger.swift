@@ -8,4 +8,4 @@
 import Foundation
 import os
 
-let logger = Logger(subsystem: "com.takigawa-memo.TKMateiralCalendar", category: "default")
+let logger = Logger(subsystem: "com.takigawa-memo.TKMaterialCalendar", category: "default")

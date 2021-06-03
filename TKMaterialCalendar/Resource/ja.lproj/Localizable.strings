@@ -5,3 +5,15 @@
   Created by takigawa on 2021/06/02.
   
 */
+
+// week day
+"sun" = "日";
+"mon" = "月";
+"tue" = "火";
+"wed" = "水";
+"thu" = "木";
+"fri" = "金";
+"sat" = "土";
+
+"refresh" = "更新";
+"settings" = "設定";

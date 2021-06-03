@@ -5,3 +5,15 @@
   Created by takigawa on 2021/06/02.
   
 */
+
+// week day
+"sun" = "sun";
+"mon" = "mon";
+"tue" = "tue";
+"wed" = "wed";
+"thu" = "thu";
+"fri" = "fri";
+"sat" = "sat";
+
+"refresh" = "Refresh";
+"settings" = "Settings";

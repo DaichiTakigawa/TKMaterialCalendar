@@ -20,6 +20,10 @@ enum DI {
             SplashViewModel()
         }
 
+        container.register(DrawerContentViewModel.self) { _ in
+            DrawerContentViewModel()
+        }
+
         return container
     }()
 

@@ -25,7 +25,13 @@ class SplashViewModel: NSObject, ObservableObject {
         }
         signIn.presentingViewController = presentingViewController
         signIn.delegate = self
-        signIn.signIn()
+        if signIn.hasPreviousSignIn() {
+            // 以前のログイン情報が残っていたら復元する
+            signIn.restorePreviousSignIn()
+        } else {
+            // 通常のログインを実行
+            signIn.signIn()
+        }
     }
 }
 

@@ -42,8 +42,8 @@ class RootViewController: UIViewController, RootNavigatorDelegate {
         let drawerWidth = min(300, UIScreen.main.bounds.width - 40)
         let drawerContainer = DrawerContainerController(drawerWidth: drawerWidth)
 
-        let mainViewController = MainViewController(rootNavigator: rootNavigator)
-        let navigationController = UINavigationController(rootViewController: mainViewController)
+        let calendarViewController = CalendarViewController(rootNavigator: rootNavigator)
+        let navigationController = UINavigationController(rootViewController: calendarViewController)
         let drawerContentViewController = DrawerContentViewController(rootNavigator: rootNavigator)
 
         // mediate
