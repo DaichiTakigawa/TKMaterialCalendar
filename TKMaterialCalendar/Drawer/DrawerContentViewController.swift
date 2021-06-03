@@ -13,6 +13,7 @@ import GoogleAPIClientForREST
 
 class DrawerContentViewController: UIViewController {
 
+    private static let calendarCellId = "CalendarCell"
     private let rootNavigator: RootNavigator
     private let viewModel = DI.shared ~> DrawerContentViewModel.self
     private var calendars: [GTLRCalendar_CalendarListEntry] = []
@@ -68,7 +69,7 @@ class DrawerContentViewController: UIViewController {
         let tableView = UITableView()
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
-        tableView.register(DrawerCalendarTableViewCell.self, forCellReuseIdentifier: "CalendarCell")
+        tableView.register(DrawerCalendarTableViewCell.self, forCellReuseIdentifier: Self.calendarCellId)
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
@@ -88,6 +89,8 @@ class DrawerContentViewController: UIViewController {
 
         setupLayout()
         setupObservers()
+
+        viewModel.fetchCalendarList()
     }
 
     private func setupObservers() {
@@ -99,7 +102,6 @@ class DrawerContentViewController: UIViewController {
     }
 
     @objc private func settingIconTapped(_ sender: UITapGestureRecognizer) {
-        viewModel.signOut()
         rootNavigator.navigateTo(destination: .splash)
     }
 
@@ -190,8 +192,9 @@ extension DrawerContentViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CalendarCell") as! DrawerCalendarTableViewCell
-        let project = calendars[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: Self.calendarCellId) as! DrawerCalendarTableViewCell
+        let calendar = calendars[indexPath.row]
+        cell.bind(calendar: calendar)
         return cell
     }
 
@@ -201,6 +204,23 @@ extension DrawerContentViewController: UITableViewDataSource {
 import SwiftUI
 
 struct DrawerContentViewWrapper: UIViewControllerRepresentable {
+
+    init() {
+        let c = Container(parent: DI.shared)
+        c.register(DrawerContentViewModel.self) { _ in
+            let viewModelMock = DrawerContentViewModelMock()
+            viewModelMock.fetchCalendarListHandler = {
+                let c1 = GTLRCalendar_CalendarListEntry()
+                c1.summary = "Calendar 1"
+                let c2 = GTLRCalendar_CalendarListEntry()
+                c2.summary = "Calendar 2"
+                viewModelMock.calendars = [c1, c2]
+            }
+            viewModelMock.userId = "hogehoge@example.com"
+            return viewModelMock
+        }
+        DI.replaceShared(container: c)
+    }
 
     func makeUIViewController(context: Context) -> DrawerContentViewController {
         DrawerContentViewController(rootNavigator: RootNavigatorMock())

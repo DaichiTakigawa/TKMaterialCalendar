@@ -43,6 +43,7 @@
 		DAC6D1E32668B786003CA947 /* RootNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */; };
 		DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */; };
 		DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */; };
+		DAC6D1E92668C547003CA947 /* DrawerContentViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E82668C547003CA947 /* DrawerContentViewModelMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigatorMock.swift; sourceTree = "<group>"; };
 		DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewModel.swift; sourceTree = "<group>"; };
 		DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerCalendarTableViewCell.swift; sourceTree = "<group>"; };
+		DAC6D1E82668C547003CA947 /* DrawerContentViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewModelMock.swift; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -332,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC6D1E22668B786003CA947 /* RootNavigatorMock.swift */,
+				DAC6D1E82668C547003CA947 /* DrawerContentViewModelMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				DA8FEA522667703800BFED0B /* DI.swift in Sources */,
 				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
 				DA8FEA4D26676FB000BFED0B /* RootViewController.swift in Sources */,
+				DAC6D1E92668C547003CA947 /* DrawerContentViewModelMock.swift in Sources */,
 				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
 				DA8FEA6226678F3800BFED0B /* Logger.swift in Sources */,
 				DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */,
