@@ -103,7 +103,7 @@ enum WeekDay: Int {
 }
 
 extension Date {
-    func toFormattedString(format: String = "yyyy/MM/dd HH:mm") -> String {
+    func toFormattedString(format: String = "yyyy/MM/dd HH:mm:ss") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)

@@ -8,6 +8,8 @@
 import UIKit
 import Combine
 import GoogleSignIn
+import GoogleAPIClientForREST
+import RealmSwift
 
 class SplashViewModel: NSObject, ObservableObject {
 
@@ -16,13 +18,17 @@ class SplashViewModel: NSObject, ObservableObject {
         case success
         case failure
     }
+
+    private let signIn: GIDSignIn
+    private let service: GTLRCalendarService
     @Published var loginState: LoginState = .initial
 
+    init(signIn: GIDSignIn, service: GTLRCalendarService) {
+        self.signIn = signIn
+        self.service = service
+    }
+
     func signIn(presentingViewController: UIViewController) {
-        guard let signIn = GIDSignIn.sharedInstance() else {
-            logger.debug("fail to get GIDSignIn instance")
-            return
-        }
         signIn.presentingViewController = presentingViewController
         signIn.delegate = self
         if signIn.hasPreviousSignIn() {
@@ -33,6 +39,7 @@ class SplashViewModel: NSObject, ObservableObject {
             signIn.signIn()
         }
     }
+
 }
 
 extension SplashViewModel: GIDSignInDelegate {
@@ -41,7 +48,8 @@ extension SplashViewModel: GIDSignInDelegate {
             logger.error("\(error.localizedDescription)")
             self.loginState = .failure
         } else {
-            self.loginState = .success
+            service.authorizer = signIn.currentUser.authentication.fetcherAuthorizer()
+            loginState = .success
         }
     }
 }

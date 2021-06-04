@@ -8,6 +8,7 @@
 #if DEBUG
 import Foundation
 import GoogleAPIClientForREST
+import GoogleSignIn
 
 class DrawerContentViewModelMock: DrawerContentViewModel {
 
@@ -25,6 +26,10 @@ class DrawerContentViewModelMock: DrawerContentViewModel {
 
     private(set) var fetchCalendarListCallCount = 0
     var fetchCalendarListHandler: (() -> Void)?
+
+    init() {
+        super.init(signIn: GIDSignIn.sharedInstance(), service: GTLRCalendarService())
+    }
 
     override func fetchCalendarList() {
         fetchCalendarListCallCount += 1

@@ -10,6 +10,15 @@
 		758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */; };
 		C3692189E9AA51C0A18E1630 /* Pods_TKMaterialCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */; };
 		D447750E3FF5C8F87FDF2FA6 /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */; };
+		DA4ADCE12668D56B00608024 /* MonthViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE02668D56B00608024 /* MonthViewViewModel.swift */; };
+		DA4ADCE32668D67800608024 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE22668D67800608024 /* MonthCalendarView.swift */; };
+		DA4ADCE52668D68D00608024 /* MonthEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE42668D68D00608024 /* MonthEventView.swift */; };
+		DA4ADCE72668D69F00608024 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE62668D69F00608024 /* Event.swift */; };
+		DA4ADCE92668D6B400608024 /* MonthEventViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE82668D6B400608024 /* MonthEventViewState.swift */; };
+		DA4ADCED2668E08000608024 /* CalendarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCEC2668E08000608024 /* CalendarEntity.swift */; };
+		DA4ADCEF2668E33500608024 /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCEE2668E33500608024 /* ColorDefinition.swift */; };
+		DA4ADCF12668E34D00608024 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4ADCF02668E34D00608024 /* Realm.xcframework */; };
+		DA4ADCF52668E35C00608024 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4ADCF42668E35C00608024 /* RealmSwift.xcframework */; };
 		DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */; };
 		DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */; };
 		DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EB12667330B001E1B22 /* ViewController.swift */; };
@@ -44,6 +53,7 @@
 		DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */; };
 		DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */; };
 		DAC6D1E92668C547003CA947 /* DrawerContentViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1E82668C547003CA947 /* DrawerContentViewModelMock.swift */; };
+		DAECE427266A069200E9E1CA /* MonthViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAECE426266A069200E9E1CA /* MonthViewRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,15 @@
 		B8F065654EE93B6509F4320B /* Pods-TKMaterialCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendarTests.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKMaterialCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4ADCE02668D56B00608024 /* MonthViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewViewModel.swift; sourceTree = "<group>"; };
+		DA4ADCE22668D67800608024 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		DA4ADCE42668D68D00608024 /* MonthEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthEventView.swift; sourceTree = "<group>"; };
+		DA4ADCE62668D69F00608024 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DA4ADCE82668D6B400608024 /* MonthEventViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthEventViewState.swift; sourceTree = "<group>"; };
+		DA4ADCEC2668E08000608024 /* CalendarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEntity.swift; sourceTree = "<group>"; };
+		DA4ADCEE2668E33500608024 /* ColorDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
+		DA4ADCF02668E34D00608024 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Carthage/Build/Realm.xcframework; sourceTree = "<group>"; };
+		DA4ADCF42668E35C00608024 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Carthage/Build/RealmSwift.xcframework; sourceTree = "<group>"; };
 		DA7F9EAA2667330B001E1B22 /* TKMaterialCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKMaterialCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7F9EAD2667330B001E1B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7F9EAF2667330B001E1B22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +129,7 @@
 		DAC6D1E42668BA1F003CA947 /* DrawerContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewModel.swift; sourceTree = "<group>"; };
 		DAC6D1E62668BA78003CA947 /* DrawerCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerCalendarTableViewCell.swift; sourceTree = "<group>"; };
 		DAC6D1E82668C547003CA947 /* DrawerContentViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewModelMock.swift; sourceTree = "<group>"; };
+		DAECE426266A069200E9E1CA /* MonthViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewRepository.swift; sourceTree = "<group>"; };
 		DD462CB7F13795FEB9A42371 /* Pods-TKMaterialCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		E2547E4A24A824DC99D3F1D8 /* Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar-TKMaterialCalendarUITests/Pods-TKMaterialCalendar-TKMaterialCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +142,9 @@
 				DA8FEA222667539100BFED0B /* Moya in Frameworks */,
 				758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */,
 				DA8FEA2D266753E200BFED0B /* KeychainAccess in Frameworks */,
+				DA4ADCF52668E35C00608024 /* RealmSwift.xcframework in Frameworks */,
 				DA8FEA2A266753CD00BFED0B /* SwinjectAutoregistration in Frameworks */,
+				DA4ADCF12668E34D00608024 /* Realm.xcframework in Frameworks */,
 				DA8FEA242667539100BFED0B /* CombineMoya in Frameworks */,
 				DA8FEA27266753B500BFED0B /* Swinject in Frameworks */,
 			);
@@ -150,6 +172,8 @@
 		4776DECE705654896BD96B34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA4ADCF42668E35C00608024 /* RealmSwift.xcframework */,
+				DA4ADCF02668E34D00608024 /* Realm.xcframework */,
 				19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */,
 				615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */,
 				D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */,
@@ -252,6 +276,8 @@
 		DA8FEA382667575100BFED0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA4ADCEC2668E08000608024 /* CalendarEntity.swift */,
+				DA4ADCEE2668E33500608024 /* ColorDefinition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +335,10 @@
 		DA8FEA502667700100BFED0B /* MonthCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				DA4ADCE22668D67800608024 /* MonthCalendarView.swift */,
+				DA4ADCE42668D68D00608024 /* MonthEventView.swift */,
+				DA4ADCE62668D69F00608024 /* Event.swift */,
+				DA4ADCE82668D6B400608024 /* MonthEventViewState.swift */,
 			);
 			path = MonthCalendar;
 			sourceTree = "<group>";
@@ -318,6 +348,8 @@
 			children = (
 				DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */,
 				DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */,
+				DA4ADCE02668D56B00608024 /* MonthViewViewModel.swift */,
+				DAECE426266A069200E9E1CA /* MonthViewRepository.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -459,10 +491,10 @@
 			);
 			mainGroup = DA7F9EA12667330B001E1B22;
 			packageReferences = (
-				DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */,
-				DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */,
-				DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
-				DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */,
+				DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */,
+				DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */,
+				DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */,
 			);
 			productRefGroup = DA7F9EAB2667330B001E1B22 /* Products */;
 			projectDirPath = "";
@@ -726,21 +758,29 @@
 				DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */,
 				DA8FEA542667708800BFED0B /* DrawerContainerController.swift in Sources */,
 				DA8FEA58266770C300BFED0B /* SplashViewController.swift in Sources */,
+				DA4ADCE12668D56B00608024 /* MonthViewViewModel.swift in Sources */,
+				DAECE427266A069200E9E1CA /* MonthViewRepository.swift in Sources */,
 				DA8FEA522667703800BFED0B /* DI.swift in Sources */,
+				DA4ADCE52668D68D00608024 /* MonthEventView.swift in Sources */,
 				DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */,
 				DA8FEA4D26676FB000BFED0B /* RootViewController.swift in Sources */,
+				DA4ADCE72668D69F00608024 /* Event.swift in Sources */,
 				DAC6D1E92668C547003CA947 /* DrawerContentViewModelMock.swift in Sources */,
 				DA7F9EAE2667330B001E1B22 /* AppDelegate.swift in Sources */,
+				DA4ADCE32668D67800608024 /* MonthCalendarView.swift in Sources */,
 				DA8FEA6226678F3800BFED0B /* Logger.swift in Sources */,
 				DA8FEA56266770A400BFED0B /* DrawerContentViewController.swift in Sources */,
 				DA8FEA4F26676FEE00BFED0B /* RootNavigator.swift in Sources */,
 				DAC6D1E32668B786003CA947 /* RootNavigatorMock.swift in Sources */,
 				DA7F9EB02667330B001E1B22 /* SceneDelegate.swift in Sources */,
 				DA8FEA332667556200BFED0B /* R.generated.swift in Sources */,
+				DA4ADCE92668D6B400608024 /* MonthEventViewState.swift in Sources */,
 				DAC6D1DC2668AF7A003CA947 /* EventViewController.swift in Sources */,
 				DAC6D1DE2668B0A5003CA947 /* MonthViewController.swift in Sources */,
 				DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */,
 				DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */,
+				DA4ADCEF2668E33500608024 /* ColorDefinition.swift in Sources */,
+				DA4ADCED2668E08000608024 /* CalendarEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +1128,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */ = {
+		DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -1096,7 +1136,7 @@
 				version = "15.0.0-alpha.1";
 			};
 		};
-		DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -1104,7 +1144,7 @@
 				minimumVersion = 2.7.1;
 			};
 		};
-		DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+		DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
 			requirement = {
@@ -1112,7 +1152,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
 			requirement = {
@@ -1125,27 +1165,27 @@
 /* Begin XCSwiftPackageProductDependency section */
 		DA8FEA212667539100BFED0B /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */;
 			productName = Moya;
 		};
 		DA8FEA232667539100BFED0B /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */;
 			productName = CombineMoya;
 		};
 		DA8FEA26266753B500BFED0B /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */;
 			productName = Swinject;
 		};
 		DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			package = DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */;
 			productName = SwinjectAutoregistration;
 		};
 		DA8FEA2C266753E200BFED0B /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -8,7 +8,8 @@
 import Foundation
 import Swinject
 import SwinjectAutoregistration
-import Moya
+import GoogleSignIn
+import GoogleAPIClientForREST
 
 // swiftlint:disable type_name
 enum DI {
@@ -16,12 +17,26 @@ enum DI {
     private(set) static var shared: Container = {
         let container = Container()
 
-        container.register(SplashViewModel.self) { _ in
-            SplashViewModel()
+        container.register(GIDSignIn.self) { _ in
+            GIDSignIn.sharedInstance()
+        }
+        container.register(GTLRCalendarService.self) { _ in
+            GTLRCalendarService()
+        }.inObjectScope(.container) // for singleton
+
+        container.register(SplashViewModel.self) { resolver in
+            SplashViewModel(signIn: resolver~>, service: resolver~>)
         }
 
-        container.register(DrawerContentViewModel.self) { _ in
-            DrawerContentViewModel()
+        container.register(DrawerContentViewModel.self) { resolver in
+            DrawerContentViewModel(signIn: resolver~>, service: resolver~>)
+        }
+
+        container.register(MonthViewViewModel.self) { resolver in
+            MonthViewViewModel(repository: resolver~>)
+        }
+        container.register(MonthViewRepository.self) { resolver in
+            MonthViewRepository(service: resolver~>)
         }
 
         return container

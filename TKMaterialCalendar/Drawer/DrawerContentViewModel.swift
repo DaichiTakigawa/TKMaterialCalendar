@@ -13,17 +13,20 @@ import GoogleAPIClientForREST
 
 class DrawerContentViewModel: ObservableObject {
 
-    private let signIn = GIDSignIn.sharedInstance()!
+    private let signIn: GIDSignIn
+    private let service: GTLRCalendarService
     @Published var calendars: [GTLRCalendar_CalendarListEntry] = []
 
     var userId: String? {
         signIn.currentUser.profile.email
     }
 
-    func fetchCalendarList() {
-        let service = GTLRCalendarService()
-        service.authorizer = signIn.currentUser.authentication.fetcherAuthorizer()
+    init(signIn: GIDSignIn, service: GTLRCalendarService) {
+        self.signIn = signIn
+        self.service = service
+    }
 
+    func fetchCalendarList() {
         let query = GTLRCalendarQuery_CalendarListList.query()
         service.executeQuery(query) { [weak self] _, data, error in
             if let error = error {
