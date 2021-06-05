@@ -12,6 +12,7 @@ import GoogleAPIClientForREST
 class CalendarEntity: Object {
     @objc dynamic var id: String = ""
     @objc dynamic var summary: String?
+    @objc dynamic var colorId: String?
 
     override static func primaryKey() -> String? {
         "id"
@@ -31,5 +32,6 @@ class CalendarEntity: Object {
     func populate(from calendar: GTLRCalendar_CalendarListEntry) {
         id = calendar.identifier!
         summary = calendar.summary
+        colorId = calendar.colorId
     }
 }

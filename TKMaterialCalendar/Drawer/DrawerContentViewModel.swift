@@ -7,35 +7,37 @@
 
 import Foundation
 import Combine
+import RealmSwift
 import GoogleSignIn
-import GTMSessionFetcher
-import GoogleAPIClientForREST
 
 class DrawerContentViewModel: ObservableObject {
 
     private let signIn: GIDSignIn
-    private let service: GTLRCalendarService
-    @Published var calendars: [GTLRCalendar_CalendarListEntry] = []
+    private var cancellables = Set<AnyCancellable>()
+    @Published var calendars: [CalendarEntity] = []
 
     var userId: String? {
         signIn.currentUser.profile.email
     }
 
-    init(signIn: GIDSignIn, service: GTLRCalendarService) {
+    init(signIn: GIDSignIn) {
         self.signIn = signIn
-        self.service = service
     }
 
-    func fetchCalendarList() {
-        let query = GTLRCalendarQuery_CalendarListList.query()
-        service.executeQuery(query) { [weak self] _, data, error in
-            if let error = error {
-                logger.error("\(error.localizedDescription)")
-            } else {
-                if let data = data as? GTLRCalendar_CalendarList, let items = data.items {
-                    self?.calendars = items
+    func searchCalendars() {
+        let realm = try! Realm()
+        let calendars = realm.objects(CalendarEntity.self)
+        return calendars.collectionPublisher
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case let .failure(error):
+                    logger.error("\(error.localizedDescription)")
+                default:
+                    break
                 }
-            }
-        }
+            }, receiveValue: { [weak self] result in
+                self?.calendars = Array(result)
+            })
+            .store(in: &cancellables)
     }
 }

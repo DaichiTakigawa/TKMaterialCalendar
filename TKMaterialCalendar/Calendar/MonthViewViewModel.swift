@@ -17,7 +17,7 @@ class MonthViewViewModel: ObservableObject {
 
     private let repository: MonthViewRepository
     private var cancellables = Set<AnyCancellable>()
-    @Published var events: [Event] = []
+    @Published var events: [Event]?
 
     init(repository: MonthViewRepository) {
         self.repository = repository
@@ -69,10 +69,46 @@ class MonthViewViewModel: ObservableObject {
             return
         }
 
+        var idToColor: [String: UIColor] = [:]
+        colorDefinitions.forEach { colorDefinition in
+            idToColor[colorDefinition.id] = colorDefinition.getBackgroundUIColor()!
+        }
+
         let start = getStartDate(targetMonth)
         let end = getEndDate(targetMonth)
         let publishers = calendars.map { calendar in
             repository.fetchEvents(calendarId: calendar.id, start: start, end: end)
+                .map { events -> [Event] in
+                    events.map { event in
+                        guard let id = event.identifier, let label = event.summary else {
+                            return nil
+                        }
+                        var color: UIColor?
+                        if let colorId = event.colorId {
+                            color = idToColor[colorId]
+                        }
+                        if color == nil, let colorId = calendar.colorId {
+                            color = idToColor[colorId]
+                        }
+                        var startDate: Date?
+                        var endDate: Date?
+                        if let start = event.start?.date?.date {
+                            startDate = start
+                            endDate = event.end?.date?.date.toPrevDate()
+                        }
+                        if let start = event.start?.dateTime?.date {
+                            startDate = start
+                            endDate = event.end?.dateTime?.date
+                        }
+                        guard let startDate = startDate, let endDate = endDate else {
+                            return nil
+                        }
+                        return Event(id: id, label: label, color: color ?? .red, startDate: startDate, endDate: endDate)
+                    }
+                    .compactMap {
+                        $0
+                    }
+                }
         }
 
         Publishers.MergeMany(publishers)
@@ -81,22 +117,6 @@ class MonthViewViewModel: ObservableObject {
                 result.flatMap {
                     $0
                 }
-                .map { event in
-                    guard let id = event.identifier,
-                          let label = event.summary,
-                          let color = colorDefinitions.first(where: {
-                            $0.id == event.colorId
-                          })?.getBackgroundUIColor(),
-                          let startDate = event.start?.date?.date ?? event.start?.dateTime?.date,
-                          let endDate = event.end?.date?.date ?? event.end?.dateTime?.date else {
-                        return nil
-                    }
-                    return Event(id: id, label: label, color: color, startDate: startDate, endDate: endDate)
-                }
-                .compactMap {
-                    $0
-                }
-
             }
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -106,6 +126,7 @@ class MonthViewViewModel: ObservableObject {
                     break
                 }
             }, receiveValue: { [weak self] events in
+                logger.debug("events.count: \(events.count)")
                 self?.events = events
             })
             .store(in: &cancellables)
@@ -114,11 +135,13 @@ class MonthViewViewModel: ObservableObject {
 }
 
 extension MonthViewViewModel {
-    func getStartDate(_ targetMonth: String) -> Date {
-        DateUtils.getDateListOfMonth(yearMonth: targetMonth, startDayOfWeek: .sunday).first!.toDate(format: "yyyy/MM/dd")
+    private func getStartDate(_ targetMonth: String) -> Date {
+        DateUtils.firstDayOfCalendar(yearMonth: targetMonth, startDayOfWeek: .sunday)
     }
 
-    func getEndDate(_ targetMonth: String) -> Date {
-        DateUtils.getDateListOfMonth(yearMonth: targetMonth, startDayOfWeek: .sunday).last!.toDate(format: "yyyy/MM/dd")
+    private func getEndDate(_ targetMonth: String) -> Date {
+        let firstDay = DateUtils.firstDayOfCalendar(yearMonth: targetMonth, startDayOfWeek: .sunday)
+        let calendar = Calendar.current
+        return calendar.date(byAdding: .day, value: (6 * 7) - 1, to: firstDay)!
     }
 }

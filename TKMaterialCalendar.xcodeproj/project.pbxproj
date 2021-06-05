@@ -10,6 +10,7 @@
 		758264C1B096D2BB03FE10D7 /* Pods_TKMaterialCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E3EBFF1CA823DA440B9117 /* Pods_TKMaterialCalendar.framework */; };
 		C3692189E9AA51C0A18E1630 /* Pods_TKMaterialCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */; };
 		D447750E3FF5C8F87FDF2FA6 /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615B315111F6342D5145863A /* Pods_TKMaterialCalendar_TKMaterialCalendarUITests.framework */; };
+		DA1F1922266B46200039A1B7 /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1921266B46200039A1B7 /* DateUtilsTests.swift */; };
 		DA4ADCE12668D56B00608024 /* MonthViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE02668D56B00608024 /* MonthViewViewModel.swift */; };
 		DA4ADCE32668D67800608024 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE22668D67800608024 /* MonthCalendarView.swift */; };
 		DA4ADCE52668D68D00608024 /* MonthEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ADCE42668D68D00608024 /* MonthEventView.swift */; };
@@ -24,7 +25,6 @@
 		DA7F9EB22667330B001E1B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EB12667330B001E1B22 /* ViewController.swift */; };
 		DA7F9EB72667330C001E1B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB62667330C001E1B22 /* Assets.xcassets */; };
 		DA7F9EBA2667330C001E1B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9EB82667330C001E1B22 /* LaunchScreen.storyboard */; };
-		DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */; };
 		DA7F9ED02667330C001E1B22 /* TKMaterialCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */; };
 		DA8FEA222667539100BFED0B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA212667539100BFED0B /* Moya */; };
 		DA8FEA242667539100BFED0B /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DA8FEA232667539100BFED0B /* CombineMoya */; };
@@ -81,6 +81,7 @@
 		B8F065654EE93B6509F4320B /* Pods-TKMaterialCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendar.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendar/Pods-TKMaterialCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		CCB3031B5729317350A60CE4 /* Pods-TKMaterialCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKMaterialCalendarTests.release.xcconfig"; path = "Target Support Files/Pods-TKMaterialCalendarTests/Pods-TKMaterialCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3A139A5E969A3D82899053B /* Pods_TKMaterialCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKMaterialCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1F1921266B46200039A1B7 /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		DA4ADCE02668D56B00608024 /* MonthViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewViewModel.swift; sourceTree = "<group>"; };
 		DA4ADCE22668D67800608024 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
 		DA4ADCE42668D68D00608024 /* MonthEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthEventView.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		DA7F9EB92667330C001E1B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA7F9EBB2667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7F9EC02667330C001E1B22 /* TKMaterialCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKMaterialCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKMaterialCalendarTests.swift; sourceTree = "<group>"; };
 		DA7F9EC62667330C001E1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7F9ECB2667330C001E1B22 /* TKMaterialCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKMaterialCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7F9ECF2667330C001E1B22 /* TKMaterialCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKMaterialCalendarUITests.swift; sourceTree = "<group>"; };
@@ -226,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				DA8FEA342667567300BFED0B /* TKMaterialCalendarTests.xctestplan */,
-				DA7F9EC42667330C001E1B22 /* TKMaterialCalendarTests.swift */,
 				DA7F9EC62667330C001E1B22 /* Info.plist */,
+				DA1F1921266B46200039A1B7 /* DateUtilsTests.swift */,
 			);
 			path = TKMaterialCalendarTests;
 			sourceTree = "<group>";
@@ -491,10 +491,10 @@
 			);
 			mainGroup = DA7F9EA12667330B001E1B22;
 			packageReferences = (
-				DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */,
-				DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */,
-				DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */,
-				DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */,
+				DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */,
+				DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */,
+				DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = DA7F9EAB2667330B001E1B22 /* Products */;
 			projectDirPath = "";
@@ -788,7 +788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7F9EC52667330C001E1B22 /* TKMaterialCalendarTests.swift in Sources */,
+				DA1F1922266B46200039A1B7 /* DateUtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,7 +1128,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */ = {
+		DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -1136,7 +1136,7 @@
 				version = "15.0.0-alpha.1";
 			};
 		};
-		DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */ = {
+		DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -1144,7 +1144,7 @@
 				minimumVersion = 2.7.1;
 			};
 		};
-		DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */ = {
+		DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
 			requirement = {
@@ -1152,7 +1152,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */ = {
+		DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
 			requirement = {
@@ -1165,27 +1165,27 @@
 /* Begin XCSwiftPackageProductDependency section */
 		DA8FEA212667539100BFED0B /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
 		DA8FEA232667539100BFED0B /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = DA8FEA202667539100BFED0B /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
 		DA8FEA26266753B500BFED0B /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject.git" */;
+			package = DA8FEA25266753B500BFED0B /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
 		DA8FEA29266753CD00BFED0B /* SwinjectAutoregistration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration.git" */;
+			package = DA8FEA28266753CD00BFED0B /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
 			productName = SwinjectAutoregistration;
 		};
 		DA8FEA2C266753E200BFED0B /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess.git" */;
+			package = DA8FEA2B266753E200BFED0B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */

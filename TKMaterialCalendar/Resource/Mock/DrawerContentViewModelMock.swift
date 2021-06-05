@@ -28,10 +28,10 @@ class DrawerContentViewModelMock: DrawerContentViewModel {
     var fetchCalendarListHandler: (() -> Void)?
 
     init() {
-        super.init(signIn: GIDSignIn.sharedInstance(), service: GTLRCalendarService())
+        super.init(signIn: GIDSignIn.sharedInstance())
     }
 
-    override func fetchCalendarList() {
+    override func searchCalendars() {
         fetchCalendarListCallCount += 1
         if let fetchCalendarListHandler = fetchCalendarListHandler {
             fetchCalendarListHandler()

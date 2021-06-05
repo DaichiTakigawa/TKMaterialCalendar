@@ -6,11 +6,10 @@
 //
 
 import UIKit
-import GoogleAPIClientForREST
 
 class DrawerCalendarTableViewCell: UITableViewCell {
 
-    private var calendar: GTLRCalendar_CalendarListEntry?
+    private var calendar: CalendarEntity?
 
     private lazy var label: UILabel = {
         let label = UILabel()
@@ -47,7 +46,7 @@ class DrawerCalendarTableViewCell: UITableViewCell {
         backgroundColor = .clear
     }
 
-    func bind(calendar: GTLRCalendar_CalendarListEntry) {
+    func bind(calendar: CalendarEntity) {
         label.text = calendar.summary
     }
 

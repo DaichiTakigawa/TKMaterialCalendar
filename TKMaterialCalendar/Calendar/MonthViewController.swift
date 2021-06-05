@@ -77,6 +77,9 @@ class MonthViewController: UIViewController {
 
     private func setupObserver() {
         viewModel.$events.sink { [weak self] events in
+            guard let events = events else {
+                return
+            }
             self?.events = events
             self?.monthCalendarView.refresh()
             self?.progressView.stopAnimating()

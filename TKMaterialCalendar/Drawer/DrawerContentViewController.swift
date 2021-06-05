@@ -9,14 +9,13 @@ import UIKit
 import Combine
 import Swinject
 import SwinjectAutoregistration
-import GoogleAPIClientForREST
 
 class DrawerContentViewController: UIViewController {
 
     private static let calendarCellId = "CalendarCell"
     private let rootNavigator: RootNavigator
     private let viewModel = DI.shared ~> DrawerContentViewModel.self
-    private var calendars: [GTLRCalendar_CalendarListEntry] = []
+    private var calendars: [CalendarEntity] = []
     private var cancellables: Set<AnyCancellable> = []
 
     private var settingIconImage: UIImage {
@@ -90,7 +89,7 @@ class DrawerContentViewController: UIViewController {
         setupLayout()
         setupObservers()
 
-        viewModel.fetchCalendarList()
+        viewModel.searchCalendars()
     }
 
     private func setupObservers() {
@@ -210,9 +209,9 @@ struct DrawerContentViewWrapper: UIViewControllerRepresentable {
         c.register(DrawerContentViewModel.self) { _ in
             let viewModelMock = DrawerContentViewModelMock()
             viewModelMock.fetchCalendarListHandler = {
-                let c1 = GTLRCalendar_CalendarListEntry()
+                let c1 = CalendarEntity()
                 c1.summary = "Calendar 1"
-                let c2 = GTLRCalendar_CalendarListEntry()
+                let c2 = CalendarEntity()
                 c2.summary = "Calendar 2"
                 viewModelMock.calendars = [c1, c2]
             }

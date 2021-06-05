@@ -220,16 +220,26 @@ class MonthEventView: UIView {
     }
 
     private func drawEventRect(_ events: [EventRect]) {
+        // I don't know why but you cant draw rect and text in the same loop.
         for event in events {
             let padding: CGFloat = 2
             let x = CGFloat(event.startX) * dayWidth
-            let y = weekDaysHeight + CGFloat(event.y) * dayHeight + dateTextHeight + CGFloat(event.rowPos) * eventHeight
+            let y = weekDaysHeight + padding + CGFloat(event.y) * dayHeight + dateTextHeight + CGFloat(event.rowPos) * eventHeight
             let width = dayWidth * CGFloat(event.stopX - event.startX) - padding
             let height = eventHeight - padding
             let rect = CGRect(x: x, y: y, width: width, height: height)
             let path = UIBezierPath(roundedRect: rect, cornerRadius: 1)
             event.color.setFill()
             path.fill()
+        }
+
+        for event in events {
+            let padding: CGFloat = 2
+            let x = CGFloat(event.startX) * dayWidth
+            let y = weekDaysHeight + padding + CGFloat(event.y) * dayHeight + dateTextHeight + CGFloat(event.rowPos) * eventHeight
+            let width = dayWidth * CGFloat(event.stopX - event.startX) - padding
+            let height = eventHeight - padding
+            let rect = CGRect(x: x, y: y, width: width, height: height)
             drawText(label: event.label,
                      in: rect,
                      fontSize: eventLetterSize,
@@ -242,7 +252,7 @@ class MonthEventView: UIView {
         for text in extraTexts {
             let padding: CGFloat = 2
             let x = CGFloat(text.x) * dayWidth
-            let y = weekDaysHeight + CGFloat(text.y + 1) * dayHeight - extraTextHeight
+            let y = weekDaysHeight + padding + CGFloat(text.y + 1) * dayHeight - extraTextHeight
             let width = dayWidth - padding
             let height = extraTextHeight - padding
             drawText(label: text.text,

@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // GIDSignIn
         GIDSignIn.sharedInstance().clientID = "1089665902945-s6ibr971vps0cvnc7kedudran6mfl46e.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().scopes = ["https://www.googleapis.com/auth/calendar.readonly"]
+        // Realm
+        let config = Realm.Configuration(schemaVersion: 1)
+        Realm.Configuration.defaultConfiguration = config
         return true
     }
 

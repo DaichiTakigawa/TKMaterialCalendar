@@ -29,7 +29,7 @@ enum DI {
         }
 
         container.register(DrawerContentViewModel.self) { resolver in
-            DrawerContentViewModel(signIn: resolver~>, service: resolver~>)
+            DrawerContentViewModel(signIn: resolver~>)
         }
 
         container.register(MonthViewViewModel.self) { resolver in

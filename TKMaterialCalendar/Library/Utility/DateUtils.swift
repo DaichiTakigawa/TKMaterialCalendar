@@ -10,10 +10,10 @@ import Foundation
 class DateUtils {
 
     private static let SECOND_A_DAY = 60 * 60 * 24
-    static let today = Calendar(identifier: .gregorian).startOfDay(for: Date())
+    static let today = Calendar.current.startOfDay(for: Date())
 
     private static var calendar: Calendar {
-        Calendar(identifier: .gregorian)
+        Calendar.current
     }
 
     private init() {
@@ -38,11 +38,8 @@ class DateUtils {
         return difference.month ?? 0
     }
 
-    static func getDateListOfMonth(yearMonth: String, startDayOfWeek: WeekDay) -> [String] {
-        guard let startDayOfMonth = yearMonth.toDateOrNil(format: "yyyy/MM") else {
-            return []
-        }
-
+    static func firstDayOfCalendar(yearMonth: String, startDayOfWeek: WeekDay) -> Date {
+        let startDayOfMonth = getStartDateOf(yearMonth: yearMonth)
         let firstDayOfWeek = calendar.component(.weekday, from: startDayOfMonth)
 
         var firstDayOfWeekIndex = 0
@@ -57,9 +54,14 @@ class DateUtils {
             }
         }
 
-        let startDate = getDate(date: startDayOfMonth, offset: -firstDayOfWeekIndex)
+        return getDate(date: startDayOfMonth, offset: -firstDayOfWeekIndex)
+    }
+
+    static func getDateListOfMonth(yearMonth: String, startDayOfWeek: WeekDay) -> [String] {
+        let firstDate = firstDayOfCalendar(yearMonth: yearMonth, startDayOfWeek: startDayOfWeek)
+
         return (0..<(6 * 7)).map { i in
-            let date = getDate(date: startDate, offset: i)
+            let date = getDate(date: firstDate, offset: i)
             return date.toFormattedString(format: "yyyy/MM/dd")
         }
     }
@@ -111,7 +113,13 @@ extension Date {
 
     func toNextDate() -> Date {
         let comp = DateComponents(day: 1)
-        let calendar = Calendar(identifier: .gregorian)
+        let calendar = Calendar.current
+        return calendar.date(byAdding: comp, to: self)!
+    }
+
+    func toPrevDate() -> Date {
+        let comp = DateComponents(day: -1)
+        let calendar = Calendar.current
         return calendar.date(byAdding: comp, to: self)!
     }
 }
@@ -130,14 +138,14 @@ extension String {
     func toNextMonth() -> String {
         let date = toDate(format: "yyyy/MM")
         let components = DateComponents(month: 1)
-        let calendar = Calendar(identifier: .gregorian)
+        let calendar = Calendar.current
         return calendar.date(byAdding: components, to: date)!.toFormattedString(format: "yyyy/MM")
     }
 
     func toPrevMonth() -> String {
         let date = toDate(format: "yyyy/MM")
         let components = DateComponents(month: -1)
-        let calendar = Calendar(identifier: .gregorian)
+        let calendar = Calendar.current
         return calendar.date(byAdding: components, to: date)!.toFormattedString(format: "yyyy/MM")
     }
 }
