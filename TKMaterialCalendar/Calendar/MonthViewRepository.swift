@@ -117,7 +117,6 @@ class MonthViewRepository {
     }
 
     func syncWithServer() {
-        logger.debug("sync with server")
         fetchCalendars()
         fetchColorDefinitions()
     }

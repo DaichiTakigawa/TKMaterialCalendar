@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 import GoogleSignIn
 
 class SettingViewController: UIViewController {
@@ -64,6 +65,9 @@ class SettingViewController: UIViewController {
         dialog.addAction(UIAlertAction(title: "OK", style: .destructive) { [weak self] _ in
             let signIn = GIDSignIn.sharedInstance()
             signIn?.signOut()
+            let realm = try! Realm()
+            try! CalendarEntity.deleteAll(in: realm)
+            try! ColorDefinition.deleteAll(in: realm)
             self?.dismiss(animated: false) {
                 self?.rootNavigator.navigateTo(destination: .splash)
             }
