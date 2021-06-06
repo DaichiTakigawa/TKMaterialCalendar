@@ -56,7 +56,9 @@ private extension UIColor {
         var a: CGFloat = 1.0
 
         let length = hexSanitized.count
-        guard Scanner(string: hexSanitized).scanHexInt64(&rgb) else { return nil }
+        guard Scanner(string: hexSanitized).scanHexInt64(&rgb) else {
+            return nil
+        }
 
         if length == 6 {
             r = CGFloat((rgb & 0xFF0000) >> 16) / 255.0

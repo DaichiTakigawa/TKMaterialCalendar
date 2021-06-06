@@ -12,14 +12,14 @@ class MonthCalendarView: UIView {
 
     private var dayWidth: CGFloat = 0
     private var dayHeight: CGFloat = 0
-    private var weekDaysHeight: CGFloat = 0
+    private var weekDaysHeight: CGFloat = 20
     private var rippleTouchControllers: [MDCRippleTouchController] = []
-    private var selectableItems: [UIView] = []
+    private var selectableViews: [UIView] = []
     private var dates: [String] = []
 
     let yearMonth: String
     var startDayOfWeek: WeekDay = .sunday
-    var dataSource: MonthCalendarViewDataSource?
+    weak var dataSource: MonthCalendarViewDataSource?
     weak var delegate: MonthCalendarViewDelegate?
 
     private lazy var monthEventView: MonthEventView = {
@@ -30,11 +30,10 @@ class MonthCalendarView: UIView {
 
     init(yearMonth: String) {
         self.yearMonth = yearMonth
-        weekDaysHeight = 20
 
         super.init(frame: .zero)
 
-        selectableItems = (0..<(6 * 7)).map { [unowned self] i in
+        selectableViews = (0..<(6 * 7)).map { [unowned self] i in
             let view = UIView()
             let rippleTouchController = MaterialScheme.shared.defaultRippleTouchController()
             rippleTouchController.addRipple(to: view)
@@ -69,7 +68,7 @@ class MonthCalendarView: UIView {
             for x in 0..<7 {
                 let posX = CGFloat(x) * dayWidth
                 let posY = CGFloat(y) * dayHeight + weekDaysHeight
-                selectableItems[y * 7 + x].frame = CGRect(x: posX, y: posY, width: dayWidth, height: dayHeight)
+                selectableViews[y * 7 + x].frame = CGRect(x: posX, y: posY, width: dayWidth, height: dayHeight)
             }
         }
 
@@ -77,7 +76,7 @@ class MonthCalendarView: UIView {
         for y in 0..<6 {
             for x in 0..<7 {
                 let index = y * 7 + x
-                let selectableItem = selectableItems[index]
+                let selectableItem = selectableViews[index]
                 selectableItem.isUserInteractionEnabled = true
                 let tapGesture = UITapGestureRecognizer(target: self, action: #selector(selectableItemTapped(_:)))
                 selectableItem.addGestureRecognizer(tapGesture)
@@ -103,7 +102,7 @@ class MonthCalendarView: UIView {
 
 }
 
-protocol MonthCalendarViewDataSource {
+protocol MonthCalendarViewDataSource: AnyObject {
     func monthCalendarViewDataSource() -> [Event]
 }
 

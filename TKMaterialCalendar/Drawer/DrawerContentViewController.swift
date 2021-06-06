@@ -22,10 +22,12 @@ class DrawerContentViewController: UIViewController {
         R.image.iconSettings.uiImage
     }
 
-    private lazy var settingIconImageView: UIImageView = {
-        let settingImageView = UIImageView(image: settingIconImage)
-        settingImageView.translatesAutoresizingMaskIntoConstraints = false
-        return settingImageView
+    private lazy var settingButton: UIButton = {
+        let button = UIButton()
+        button.setImage(settingIconImage, for: .normal)
+        button.addTarget(self, action: #selector(settingIconTapped(_:)), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
 
     private var profileImage: UIImage {
@@ -70,6 +72,7 @@ class DrawerContentViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.register(DrawerCalendarTableViewCell.self, forCellReuseIdentifier: Self.calendarCellId)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -100,10 +103,6 @@ class DrawerContentViewController: UIViewController {
         .store(in: &cancellables)
     }
 
-    @objc private func settingIconTapped(_ sender: UITapGestureRecognizer) {
-        rootNavigator.navigateTo(destination: .splash)
-    }
-
     private func setupLayout() {
         let safeAreaGuide = view.safeAreaLayoutGuide
 
@@ -126,11 +125,11 @@ class DrawerContentViewController: UIViewController {
         vStackView.addArrangedSubview(view1)
 
         // setting icon image view
-        view1.addSubview(settingIconImageView)
+        view1.addSubview(settingButton)
         NSLayoutConstraint.activate([
-            settingIconImageView.topAnchor.constraint(equalTo: view1.topAnchor, constant: 16),
-            settingIconImageView.trailingAnchor.constraint(equalTo: view1.trailingAnchor),
-            view1.heightAnchor.constraint(equalTo: settingIconImageView.heightAnchor, constant: 32)
+            settingButton.topAnchor.constraint(equalTo: view1.topAnchor, constant: 16),
+            settingButton.trailingAnchor.constraint(equalTo: view1.trailingAnchor),
+            view1.heightAnchor.constraint(equalTo: settingButton.heightAnchor, constant: 32)
         ])
 
         // view2
@@ -182,21 +181,31 @@ class DrawerContentViewController: UIViewController {
 
         view.backgroundColor = R.color.colorDrawer()
     }
+
+    @objc private func settingIconTapped(_ sender: UITapGestureRecognizer) {
+        let vc = UINavigationController(rootViewController: SettingViewController(rootNavigator: rootNavigator))
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+
 }
 
 extension DrawerContentViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         calendars.count
     }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Self.calendarCellId) as! DrawerCalendarTableViewCell
         let calendar = calendars[indexPath.row]
         cell.bind(calendar: calendar)
         return cell
     }
+}
 
+extension DrawerContentViewController: UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 #if DEBUG

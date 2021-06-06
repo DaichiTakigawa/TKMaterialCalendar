@@ -56,14 +56,20 @@ class CalendarViewController: UIViewController {
                 vc.refresh()
             }
         }
-        let settingsAction = UIAction(title: R.string.localizable.settings()) { _ in
+        let settingsAction = UIAction(title: R.string.localizable.settings()) { [weak self] _ in
+            guard let self = self else {
+                return
+            }
+            let vc = UINavigationController(rootViewController: SettingViewController(rootNavigator: self.rootNavigator))
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
         ellipsisButton.menu = UIMenu(title: "", children: [refreshAction, settingsAction])
         ellipsisButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         ellipsisButton.showsMenuAsPrimaryAction = true
         let optionItem = UIBarButtonItem(customView: ellipsisButton)
 
-        let todayImage = R.image.iconToday()
+        let todayImage = R.image.iconToday()?.withRenderingMode(.alwaysTemplate)
         let todayButton = UIButton()
         todayButton.setImage(todayImage, for: .normal)
         todayButton.addTarget(self, action: #selector(onTodayTapped), for: .touchUpInside)
@@ -91,16 +97,14 @@ class CalendarViewController: UIViewController {
         let vc = pageViewController.viewControllers?.first as! MonthViewController
         let yearMonth = vc.yearMonth
         let offset = DateUtils.getMonthOffset(from: yearMonth, to: nowYearMonth)
+        let newVC = MonthViewController(yearMonth: nowYearMonth)
         if offset > 0 {
-            pageViewController.setViewControllers([MonthViewController(yearMonth: nowYearMonth)],
-                                                  direction: .reverse,
-                                                  animated: true)
+            pageViewController.setViewControllers([newVC], direction: .forward, animated: true)
         } else if offset < 0 {
-            pageViewController.setViewControllers([MonthViewController(yearMonth: nowYearMonth)],
-                                                  direction: .forward,
-                                                  animated: true)
+            pageViewController.setViewControllers([newVC], direction: .reverse, animated: true)
         }
         title = nowYearMonth
+        currentVC = newVC
     }
 
     @objc private func menuItemTapped() {

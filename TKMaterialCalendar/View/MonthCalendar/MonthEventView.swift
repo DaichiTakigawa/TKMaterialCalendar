@@ -43,14 +43,14 @@ class MonthEventView: UIView {
 
     private var dayWidth: CGFloat = 0
     private var dayHeight: CGFloat = 0
-    private let weekDaysHeight: CGFloat
-    private let weekDaysLetterSize: CGFloat
-    private let dateLetterSize: CGFloat
-    private let dateTextHeight: CGFloat
-    private let eventLetterSize: CGFloat
-    private let eventHeight: CGFloat
-    private let extraLetterSize: CGFloat
-    private let extraTextHeight: CGFloat
+    private let weekDaysHeight: CGFloat = 20
+    private let weekDaysLetterSize: CGFloat = 14
+    private let dateLetterSize: CGFloat = 10
+    private let dateTextHeight: CGFloat = 16
+    private let eventLetterSize: CGFloat = 10
+    private let eventHeight: CGFloat = 16
+    private let extraLetterSize: CGFloat = 10
+    private let extraTextHeight: CGFloat = 16
     private let baseColor: UIColor
     private let gridColor: UIColor
     private let todayColor: UIColor
@@ -59,7 +59,7 @@ class MonthEventView: UIView {
     private let weekDaysTextColor: UIColor
     private let eventTextColor: UIColor
     private let extraTextColor: UIColor
-    private let strokeWidth: CGFloat
+    private let strokeWidth: CGFloat = 1
     private var eventRowSize = 0
     private var todayString = ""
 
@@ -73,18 +73,9 @@ class MonthEventView: UIView {
 
     init(yearMonth: String) {
         self.yearMonth = yearMonth
-        weekDaysHeight = 20
-        dateTextHeight = 16
-        eventHeight = 16
-        extraTextHeight = 16
-        weekDaysLetterSize = 14
-        dateLetterSize = 10
-        eventLetterSize = 10
-        extraLetterSize = 10
 
         baseColor = R.color.colorDivider.uiColor
         gridColor = baseColor
-        strokeWidth = 1
 
         todayColor = R.color.colorSecondary.uiColor
         weakTextColor = baseColor

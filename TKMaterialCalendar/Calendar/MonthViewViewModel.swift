@@ -126,7 +126,6 @@ class MonthViewViewModel: ObservableObject {
                     break
                 }
             }, receiveValue: { [weak self] events in
-                logger.debug("events.count: \(events.count)")
                 self?.events = events
             })
             .store(in: &cancellables)

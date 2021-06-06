@@ -45,6 +45,7 @@
 		DA8FEA5E26677A6000BFED0B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */; };
 		DA8FEA6026677BEF00BFED0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */; };
 		DA8FEA6226678F3800BFED0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FEA6126678F3800BFED0B /* Logger.swift */; };
+		DAB44B5E266C771300DEA79F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB44B5D266C771300DEA79F /* SettingViewController.swift */; };
 		DAC6D1DA2668AF6C003CA947 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */; };
 		DAC6D1DC2668AF7A003CA947 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */; };
 		DAC6D1DE2668B0A5003CA947 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */; };
@@ -121,6 +122,7 @@
 		DA8FEA5D26677A6000BFED0B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		DA8FEA5F26677BEF00BFED0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA8FEA6126678F3800BFED0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DAB44B5D266C771300DEA79F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DAC6D1D92668AF6C003CA947 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		DAC6D1DD2668B0A5003CA947 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				DA8FEA3A2667577D00BFED0B /* Drawer */,
 				DA8FEA59266770DE00BFED0B /* Calendar */,
 				DA8FEA5A266770ED00BFED0B /* Event */,
+				DAB44B5C266C76DD00DEA79F /* Settings */,
 				DA8FEA3B2667578C00BFED0B /* View */,
 				DA8FEA3C2667579500BFED0B /* Library */,
 				DA8FEA312667553C00BFED0B /* Resource */,
@@ -360,6 +363,14 @@
 				DAC6D1DB2668AF7A003CA947 /* EventViewController.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		DAB44B5C266C76DD00DEA79F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DAB44B5D266C771300DEA79F /* SettingViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		DAC6D1E12668B76B003CA947 /* Mock */ = {
@@ -777,6 +788,7 @@
 				DA4ADCE92668D6B400608024 /* MonthEventViewState.swift in Sources */,
 				DAC6D1DC2668AF7A003CA947 /* EventViewController.swift in Sources */,
 				DAC6D1DE2668B0A5003CA947 /* MonthViewController.swift in Sources */,
+				DAB44B5E266C771300DEA79F /* SettingViewController.swift in Sources */,
 				DAC6D1E52668BA1F003CA947 /* DrawerContentViewModel.swift in Sources */,
 				DAC6D1E72668BA78003CA947 /* DrawerCalendarTableViewCell.swift in Sources */,
 				DA4ADCEF2668E33500608024 /* ColorDefinition.swift in Sources */,
