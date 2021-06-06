@@ -7,7 +7,7 @@ Simple calendar view like g00gle calendar.
 <br/>
 <br/>
 
-<img src="./img/screenshot.png" alt="screenshot" style="width: 300px;" />　　　 <img src="./img/screenshot.gif" alt="screenshot" style="width: 300px;" />
+<img src="./img/screenshot.png" alt="screenshot" style="width: 300px;" />　　 <img src="./img/screenshot.gif" alt="screenshot" style="width: 300px;" />
 
 ## Reference
 
